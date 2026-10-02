@@ -1,3 +1,28 @@
+/*
+Project: Embodied Environments — Pressure Sensor + LED Interaction
+Author: Eunsung Choi
+Date: October 2026
+Description:
+This program uses two pressure sensors and five LEDs connected to an
+ESP32 Feather. The paw sensor detects when the dog has been picked up.
+After the paw sensor remains below its threshold for 5 seconds, the
+LEDs perform a slow breathing animation. The flower sensor detects
+when someone is sitting on the flower and runs a rotating LED sequence.
+
+Code Attribution:
+This code was developed using concepts and example code from the
+OCADU Creation & Computation 301 course reference:
+"Pressure Sensor & LED Code Examples," Fall 2026.
+In particular, I used ideas from:
+- Example 3: Relative Thresholds
+(sensor baseline, baseline averaging, and offset-based thresholds)
+- Example 5: Thresholds and Time
+(using millis() to measure how long a sensor remains past a threshold)
+Reference:
+OCADU Creation & Computation 301,
+"Pressure Sensor & LED Code Examples," Fall 2026.
+All comments describing the behavior and modifications in this program were written for this project.
+*/
 int pawPin = A1;
 int pawValue;
 
